@@ -926,24 +926,35 @@
     </div>
 
     <!-- search job -->
-    <section class="pb-[120px]">
+    <section class="md:pb-[120px]">
       <div class="container mt-6 md:mt-8">
-        <h2 class="text-6xl w-[480px] mt-12 font-bold">
+        <h2
+          class="text-[25px] md:text-6xl sm:text-5xl sm:w-[480px] w-full mt-12 font-bold"
+        >
           Работа в сфере красоты
         </h2>
-        <h4 class="text-xl w-[650px] mt-7 font-light">
+        <h4 class="text-xl md:w-[650px] mt-5 md:mt-7 font-light">
           Добро пожаловать на первый сайт в индустрии красоты, который помогает
           мастерам и салонам красоты найти друг друга.
         </h4>
 
-        <h3 class="font-bold mt-24 text-[35px]">Найти работу</h3>
-        <div class="text-base font-light mt-3">
+        <h3
+          class="font-bold mt-8 text-center md:text-start md:mt-24 text-[35px]"
+        >
+          Найти работу
+        </h3>
+        <div
+          class="text-sm sm:text-lg md:text-base text-center md:text-start font-light mt-2 md:mt-3"
+        >
           73 салона красоты в 27 городах России ищут именно тебя!
         </div>
         <div>
           <!-- Form with selects -->
-          <form action="" class="flex flex-wrap mt-5 space-x-10">
-            <div class="relative w-full">
+          <form
+            action=""
+            class="flex flex-wrap space-y-4 md:space-y-6 lg:space-y-0 lg:flex-nowrap mt-5 lg:space-x-10"
+          >
+            <div class="relative w-full lg:w-auto">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 16 11"
@@ -953,7 +964,7 @@
                 <path d="M8 11L15.7942 0.5H0.205771L8 11Z" fill="#610944" />
               </svg>
               <select
-                class="text-black text-3xl/[30px] font-bold flex items-center px-[49px] rounded-full border-main-light border-2 border-solid lg:w-[356px] h-20 md:w-full md:text-2xl/[24px] md:h-16 appearance-none"
+                class="text-black text-lg lg:text-3xl/[30px] font-bold flex text-center lg:text-left items-center px-[49px] rounded-full border-main-light border-2 border-solid sm:w-1/2 lg:w-[356px] h-16 w-full md:text-2xl/[24px] lg:20 appearance-none"
                 name="city"
                 id=""
               >
@@ -961,7 +972,7 @@
               </select>
             </div>
 
-            <div class="relative w-full">
+            <div class="relative w-full lg:w-auto">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 16 11"
@@ -971,7 +982,7 @@
                 <path d="M8 11L15.7942 0.5H0.205771L8 11Z" fill="#610944" />
               </svg>
               <select
-                class="text-black text-3xl/[30px] font-bold flex items-center px-[49px] rounded-full border-main-light border-2 border-solid lg:w-[356px] h-20 md:w-full md:text-2xl/[24px] md:h-16 appearance-none"
+                class="text-black text-lg lg:text-3xl/[30px] font-bold flex text-center lg:text-left items-center px-[49px] rounded-full border-main-light border-2 border-solid sm:w-1/2 lg:w-[356px] h-16 w-full md:text-2xl/[24px] lg:20 appearance-none"
                 name="city"
                 id=""
               >
@@ -980,13 +991,13 @@
             </div>
 
             <button
-              class="bg-main-light w-[140px] h-20 md:h-16 rounded-full flex items-center justify-center"
+              class="mx-auto sm:mx-0 h-[58px] bg-main-light w-[205px] lg:w-[140px] lg:h-20 md:h-16 rounded-full flex items-center justify-center"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 42 49"
                 fill="none"
-                class="w-10 h-11 inline-block"
+                class="w-10 h-11 lg:inline-block hidden"
               >
                 <path
                   fill-rule="evenodd"
@@ -999,6 +1010,9 @@
                   fill="white"
                 />
               </svg>
+              <div class="text-white text-[25px] font-bold lg:hidden">
+                Найти
+              </div>
             </button>
           </form>
         </div>
@@ -1006,24 +1020,41 @@
     </section>
 
     <!-- employees section -->
-    <section class="top-shadow pt-[88px] pb-20">
+    <section class="pb-20 overflow-hidden">
+      <div class="hidden md:block top-shadow pb-[88px]"></div>
       <div class="container mt-6 md:mt-8">
         <!-- employee card -->
         <div
-          class="flex border-2 border-main-light rounded-[20px] py-6 pl-[33px] pr-[50px]"
+          class="flex border-2 border-main-light rounded-[20px] pb-[30px] pt-[14px] md:py-3 px-6 lg:py-6 lg:pl-[33px] lg:pr-[50px]"
         >
-          <div>
-            <h4 class="text-[35px]/[35px] font-bold">Парикмахер-универсал</h4>
-            <div class="mt-2 text-black text-[50px] font-bold">
+          <div class="w-full sm:w-auto">
+            <h4
+              class="text-xl text-center sm:text-start sm:text-2xl lg:text-[35px]/[35px] font-bold"
+            >
+              Парикмахер-универсал
+            </h4>
+            <div
+              class="mt-1 lg:mt-2 text-center sm:text-left text-black text-[30px] lg:text-[50px] font-bold"
+            >
               30 000 - 80 000 ₽
             </div>
 
-            <div class="flex mt-[18px]">
+            <div
+              class="flex items-center justify-center mx-auto sm:hidden mt-3 w-[161px] h-[152px] shadow-card-shadow rounded-[17px]"
+            >
+              <img
+                class="w-[120px] h-[119px]"
+                src="public/img/strizka_shop.png"
+                alt="haircut"
+              />
+            </div>
+
+            <div class="flex items-center mt-[18px]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 22"
                 fill="none"
-                class="w-6 h-[22px]"
+                class="w-[15px] h-[14px] sm:w-6 sm:h-[22px]"
               >
                 <path
                   d="M23.5827 11.2594L20.8701 8.69626V3.69209C20.8701 2.95978 20.4528 2.47157 19.8268 2.47157H16.6969C16.1753 2.47157 15.6536 2.95978 15.6536 3.69209L12.1064 0.274619C11.6891 -0.0915395 11.1675 -0.0915395 10.7502 0.274619L0.317216 11.2594C0.00422726 11.6255 -0.100102 12.2358 0.108557 12.724C0.212886 13.0902 0.630204 13.4563 1.04752 13.4563H3.13411V20.7795C3.13411 21.5118 3.55143 22 4.17741 22H19.8268C20.4528 22 20.8701 21.5118 20.8701 20.7795V13.4563H22.9567C23.374 13.4563 23.7913 13.0902 23.8957 12.6019C24.1043 12.1137 24 11.6255 23.5827 11.2594ZM17.7402 4.91262H18.7835V6.62136L17.7402 5.64494V4.91262ZM10.4372 19.5589V14.6768H7.30729V19.5589H5.2207V13.4563H18.7835V19.5589H10.4372ZM3.76009 11.0153L11.4805 2.83773L20.0355 11.0153H3.76009Z"
@@ -1035,19 +1066,19 @@
                 />
               </svg>
               <div
-                class="ml-[6px] font-bold text-xl text-main-light underline underline-offset-[5px] decoration-1"
+                class="ml-[6px] font-bold text-xs sm:text-xl text-main-light underline underline-offset-[5px] decoration-1"
               >
                 Стрижка Shop
               </div>
             </div>
 
-            <div class="mt-6 flex space-x-[73px] h-6">
-              <div class="flex">
+            <div class="mt-3 md:mt-6 block md:flex md:space-x-14 h-6">
+              <div class="flex items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 23 20"
                   fill="none"
-                  class="w-[23px] h-5"
+                  class="w-[15px] h-[13px] sm:w-[23px] sm:h-5"
                 >
                   <path
                     fill-rule="evenodd"
@@ -1056,51 +1087,65 @@
                     fill="black"
                   />
                 </svg>
-                <div class="ml-[6px] font-light text-base text-main-light">
+                <div
+                  class="ml-[6px] font-light text-xs sm:text-base text-main-light"
+                >
                   Опыт от 1 года до 3 лет
                 </div>
               </div>
 
-              <div class="flex">
+              <div class="flex items-center ml-[3px] mt-3 md:mt-0">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 15 21"
                   fill="none"
-                  class="w-[15px] h-[21px]"
+                  class="w-[9px] h-[13px] sm:w-[15px] sm:h-[21px]"
                 >
                   <path
                     d="M15 7.41176C15 3.33529 11.625 0 7.5 0C3.375 0 0 3.33529 0 7.41176C0 12.3529 7.5 21 7.5 21C7.5 21 15 12.3529 15 7.41176ZM4.375 7.41176C4.375 5.68235 5.75 4.32353 7.5 4.32353C9.25 4.32353 10.625 5.68235 10.625 7.41176C10.625 9.14118 9.25 10.5 7.5 10.5C5.75 10.5 4.375 9.14118 4.375 7.41176Z"
                     fill="black"
                   />
                 </svg>
-                <div class="ml-[6px] font-light text-base text-main-light">
+                <div
+                  class="ml-[6px] font-light text-xs sm:text-base text-main-light"
+                >
                   Ханты-Мансийск
                 </div>
               </div>
             </div>
 
-            <div class="flex mt-8 space-x-7">
-              <button
-                class="btn-primary w-full lg:w-auto lg:inline-flex !font-light"
-                x-on:click="$dispatch('show-modal-become-model')"
+            <div
+              class="flex space-y-[18px] md:space-y-0 justify-center sm:justify-normal flex-wrap md:flex-nowrap mt-14 md:mt-8 md:space-x-7"
+            >
+              <div
+                class="flex justify-center sm:justify-normal md:block w-full lg:w-auto"
               >
-                Подробнее
-              </button>
-              <button
-                class="btn-primary w-full lg:w-auto lg:inline-flex !font-light"
-                x-on:click="$dispatch('show-modal-become-model')"
+                <button
+                  class="btn-primary h-[42px] md:h-auto !w-[184px] md:w-full lg:!w-auto lg:inline-flex !font-light"
+                  x-on:click="$dispatch('show-modal-become-model')"
+                >
+                  Подробнее
+                </button>
+              </div>
+              <div
+                class="flex justify-center sm:justify-normal md:block w-full lg:w-auto"
               >
-                Показать контакты
-              </button>
+                <button
+                  class="btn-primary h-[42px] md:h-auto !w-[184px] md:w-full lg:!w-auto lg:inline-flex !font-light"
+                  x-on:click="$dispatch('show-modal-become-model')"
+                >
+                  Показать контакты
+                </button>
+              </div>
             </div>
           </div>
 
           <!-- card img -->
           <div
-            class="flex items-center justify-center ml-auto w-[316px] h-[299px] shadow-card-shadow rounded-[17px]"
+            class="hidden sm:flex items-center justify-center ml-auto sm:mt-2 sm:w-[230px] sm:h-[220px] lg:w-[316px] lg:h-[299px] shadow-card-shadow rounded-[17px]"
           >
             <img
-              class="w-[234px] h-[234px]"
+              class="lg:w-[234px] lg:h-[234px] sm:w-[180px] sm:h-[180px]"
               src="public/img/strizka_shop.png"
               alt="haircut"
             />
@@ -1109,21 +1154,21 @@
 
         <!-- application -->
         <div
-          class="relative mx-auto mt-[186px] w-[1007px] min-h-[285px] px-14 py-[53px] bg-main-gray rounded-[20px] border-2 border-solid border-main-light"
+          class="relative mx-auto mt-7 lg:mt-[186px] w-full xl:w-[1007px] min-h-[285px] px-[22px] pb-[183px] py-7 xl:px-14 xl:py-[53px] bg-main-gray rounded-[20px] border-2 border-solid border-main-light"
         >
-          <div class="w-[585px] text-main-light text-xl font-bold">
+          <div class="w-full lg:w-[585px] text-main-light text-xl font-bold">
             Если вы не нашли подходящую вакансию, обратитесь к нам, и наш
             менеджер займется поиском индивидуально для вас
           </div>
 
           <button
-            class="mt-[38px] min-w-[337px] py-[17px] px-[30px] bg-main-light rounded-full text-white text-[35px]/[35px] font-bold"
+            class="mt-[38px] min-w-[259px] xl:min-w-[337px] py-[17px] px-[30px] bg-main-light rounded-full text-white text-[25px]/[25px] xl:text-[35px]/[35px] font-bold"
           >
             Оставить заявку
           </button>
 
           <img
-            class="absolute block bottom-0 right-[-43px]"
+            class="absolute w-[338px] h-[312px] lg:w-[486px] lg:h-[448px] block bottom-0 right-[-94px] lg:right-[-43px]"
             src="public/img/wooman.png"
             alt="wooman"
           />
